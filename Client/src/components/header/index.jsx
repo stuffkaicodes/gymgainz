@@ -1,23 +1,32 @@
 import '../home/Home.css';
-import { Box, Flex, Icon } from "@chakra-ui/react";
+import { Box, Flex, Icon, Text } from "@chakra-ui/react";
 import { IoHome, IoLogOut } from "react-icons/io5";
 import { useNavigate } from 'react-router-dom';
 import React from 'react'; 
 // import moment from "moment";
 import LiveClock from './clock.jsx';
+import { useAuth } from "../../AuthContext";
+import Cookies from 'js-cookie';
 
 function Header() {
+
+  const { isLoggedIn, logout, user } = useAuth();
 
   const navigate = useNavigate();
   
   // go back to home page 
   const goHome = () => {
-    navigate(`/`); 
+    if (isLoggedIn && window.location.pathname !== '/home' ){
+      navigate(`/home`); 
+    } else if (window.location.pathname !== '/home'){
+      navigate(`/`); 
+    }
   }
 
   // go back to home page 
-  const goLogin = () => {
-    navigate(`/login`); 
+  const goLogout = () => {
+    logout();
+    navigate(`/`); 
   }
 
   return (
@@ -30,15 +39,16 @@ function Header() {
 
         {/* Centered Home Icon */}
         {/* <Spacer width='20%' /> */}
-        <Box width='33.33%' display='flex' justifyContent='center'>
+        <Box width='33.33%' display='inline-block' justifyContent='center'>
         <Icon as={IoHome} onClick={goHome} fontSize='2xl'/>
+        <Text > {isLoggedIn && user ? user : null} </Text>
         </Box>
         {/* <Spacer width='20%' /> */}
 
         {/* Logout Icon */}
-        <Box display='flex' flex='1' width='33.33%' justifyContent='end'>
-        <Icon as={IoLogOut} onClick={goLogin}  fontSize='2xl' />
-        </Box>
+        {isLoggedIn && (<Box display='flex' flex='1' width='33.33%' justifyContent='end'>
+        <Icon as={IoLogOut} onClick={goLogout}  fontSize='2xl' />
+        </Box>)}
 
       </Flex>
       </Box>

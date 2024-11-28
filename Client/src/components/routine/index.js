@@ -1,22 +1,17 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { useNavigate, useParams, useLocation } from 'react-router-dom';
 import { Box, Button, Divider, Text, IconButton, Flex, Image, Input, Spinner } from "@chakra-ui/react";
-import { FaArrowLeft, FaSync } from 'react-icons/fa';
+import { FaArrowLeft, FaSync, FaHistory } from 'react-icons/fa';
 import FloatingButton from '../addNewButton/index.js'; 
-import { useSwipeable } from 'react-swipeable';
+import { useAuth } from "../../AuthContext";
 import SwipeableComponent from '../swipeableComponent/index.js';
-
-// function useSwipeableHandlers(index, onSwipeLeft) {
-//   return useSwipeable({
-//     onSwipedLeft: () => onSwipeLeft(index),
-//     preventDefaultTouchmoveEvent: true,
-//   });
-// }
 
 function Routine() {
 
   const location = useLocation();
   const navigate = useNavigate();
+
+  const {user} = useAuth();
 
   const { name } = useParams();
   const initialData = location.state || null;
@@ -36,7 +31,8 @@ function Routine() {
 
     // Prepare data to send
     const data = {
-      'exercise': item,
+      'user': user,
+      'exercise': item[0],
       'weight': weight,
       'sets': sets,
       'reps': reps
@@ -62,7 +58,7 @@ function Routine() {
 
   // go back to home page 
   const goHome = () => {
-    navigate(`/`); 
+    navigate(`/home`); 
   }
 
   // toggle completion button on and off
@@ -86,6 +82,31 @@ function Routine() {
     setVisibleStates(data.map(value => false));
     setSwiped(data.map(value => false));
     setLoading(false);
+    } catch (error) {
+        console.log(error)
+  }
+}
+
+  // fetch backend data upon load
+  const getPrev = async () => { 
+    setLoading(true);
+    try {
+      // const response = await fetch(`http://172.20.10.2:3001/getPrev/`+ name);
+      const response = await fetch(`http://localhost:3001/getPrev`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({ user: user })
+        });
+    //   if (!response.ok) {
+    //       alert(response.err);
+    //   }
+    // const data = await response.json();
+    // setData(data);
+    // setVisibleStates(data.map(value => false));
+    // setSwiped(data.map(value => false));
+    // setLoading(false);
     } catch (error) {
         console.log(error)
   }
@@ -167,17 +188,23 @@ const onDelete = (event, indexRemove) => {
           <IconButton ml={2} mr={5} aria-label="Back" icon={<FaArrowLeft />} 
           onClick={goHome}/> 
           <Text 
-          fontWeight='500' display='flex' flexGrow='1'
-          fontSize='1.75rem' > 
+          fontWeight='500'
+          fontSize='1.75rem' flexGrow='1' > 
             {name} Day Routine
           </Text>
+          <Box display='flex' justifyContent='end'> 
+            <IconButton justifySelf='end' ml={2} mr={5} aria-label="Back" icon={< FaHistory/>} 
+            onClick={getPrev}/> 
+          </Box>
         </Box>
         {loading ?
           <Box display='flex' justifyContent='center'>
             <Spinner mt='10rem' />
           </Box>
           :
+          
             <Box mt='5rem'>
+              {/* <Text textDecoration='underline'padding ='1rem' fontWeight='400'> List of Exercises </Text> */}
           {buttonData.map((item, index) => {
 
           return (
@@ -257,29 +284,30 @@ const onDelete = (event, indexRemove) => {
                             objectFit="cover"
                             boxSize="100%"
                           />
+                          <Text> {item[2]? item[2]: null} </Text>
                         </Box>
                       </Flex>
-                      <Box display='flex' flexGrow='1' gap='1.5rem' justifyContent='center'>
+                      <Box display='flex' flexGrow='1' gap='1rem' justifyContent='center'>
                         <form onSubmit={(e) => handleSubmit(e, { item }, { sets }, { weight }, { reps })}>
                           <label htmlFor="weight" />
-                          <Input style={{ display: 'inline-flex', width: '100%', zIndex: '0' }} 
+                          <Input style={{ marginTop:'0.25rem', marginBottom:'0.25rem', display: 'inline-flex', width: '100%', zIndex: '0' }} 
                             placeholder='Weight' id="Weight"
                             value={weight} onChange={(e) => setWeight(e.target.value)} 
                           />
                           <label htmlFor="number of sets" />
-                          <Input style={{ display: 'inline-flex', width: '100%', zIndex: '0' }} 
+                          <Input style={{  marginTop:'0.25rem', marginBottom:'0.25rem', display: 'inline-flex', width: '100%', zIndex: '0' }} 
                             placeholder='Sets' id="sets"
                             value={sets} onChange={(e) => setSets(e.target.value)} 
                           />
                           <label htmlFor="number of reps" />
-                          <Input style={{ display: 'inline-flex', width: '100%', zIndex: '0' }} 
+                          <Input style={{  marginTop:'0.25rem', marginBottom:'0.25rem', display: 'inline-flex', width: '100%', zIndex: '0' }} 
                             placeholder='Reps' id="reps"
                             value={reps} onChange={(e) => setReps(e.target.value)} 
                           />
                           <Box display='flex' justifyContent='center'>
                             <Divider width='100%' justifyItems='center' pt='1rem' />
                           </Box>
-                          <Box p={4} display='grid' mt='2rem' mb='2rem'>
+                          <Box p={4} display='grid' mt='0.5rem' mb='0.5rem'>
                             <Button type='submit' justifySelf='center' bg='#282c34' color='white'>
                               Submit Input Values 
                             </Button>

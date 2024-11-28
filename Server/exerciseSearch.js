@@ -33,6 +33,3 @@ export async function exerciseTypeSearch(rows, exercise){
 
     return exerciseType
 }
-
-
-// export default exerciseSearch;

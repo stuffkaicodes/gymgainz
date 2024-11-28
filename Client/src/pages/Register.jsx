@@ -2,10 +2,13 @@ import React, { useState, useEffect, useMemo} from 'react';
 import { Input, Box, Button, FormControl, FormLabel, InputGroup, InputRightElement, Text, FormErrorMessage } from "@chakra-ui/react";
 import { useNavigate } from 'react-router-dom'; 
 import ValidateInputs from '../Hooks/UserValidate.jsx';
+import { useAuth } from "../AuthContext";
 
 function Register() {
 
     const navigate = useNavigate();
+
+    const { login } = useAuth();
 
     const [showPassword, setShowPassword] = useState(false);
     const [username, setUsername] = useState("");
@@ -15,9 +18,14 @@ function Register() {
 
     const togglePasswordVisibility = () => setShowPassword(!showPassword);
     
+    const evaluation = ValidateInputs(name, username, password);
+
     const handleSubmit = async (e) => {
         e.preventDefault();
-        if ({ValidateInputs}) {
+        
+        console.log(evaluation);
+        
+        if (Object.values(evaluation).every(item => item === "")) {
             try{
                 const user = {name, username, password}
                 const response = await fetch('http://localhost:3001/register/',{
@@ -27,23 +35,26 @@ function Register() {
                     },
                     body: JSON.stringify(user),
                 });
-                console.log(await response.json())
                 if (response.status == 200){
+                    const res = await response.json()
+                    const token = res.token
                     alert(`Welcome to Gymgainz ${name}`)
-                    navigate(`/`); 
+                    login(token, username, password);
+                    navigate(`/home`); 
                 } else{
-                    alert('Error occured. Please try again')
+                    const message = await response.json();
+                    alert(message.message)
                 }
             } catch(error){
             console.log(error)
             }}
         else{
-            console.log(errors);
+            setErrors(evaluation);
             }
     };
 
     function handleClick() {
-        navigate(`/login`); 
+        navigate(`/`); 
     }
 
     return (
@@ -54,7 +65,7 @@ function Register() {
             <Box display='block' gap='1rem'>
                 <form onSubmit={handleSubmit}>
                     {/* Name Input */}
-                    <FormControl isInvalid={!!errors.username} mb="4">
+                    <FormControl isInvalid={!!errors.name} mb="4">
                         <FormLabel>Name</FormLabel>
                         <Input
                         value={name}

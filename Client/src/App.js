@@ -13,12 +13,12 @@ function App() {
     <Router>
       <Header/>
       <Routes>
-        <Route path="/login" element={<Login/>}/>
+        <Route path="/" element={<Login/>}/>
         <Route path="/register" element={<Register/>}/>
-        <Route path="/" element={<Home />}/>
+        <Route path="/home" element={<Home />}/>
         <Route path='/routine/:name' element={<Routine/>}/>
         <Route path='/routine/:name/add/:exercise/' element={<DataTable/>}/>
-        <Route path='/past' element={<PastRoutines/>}/>
+        <Route path='/record' element={<PastRoutines/>}/>
       </Routes> 
     </Router>
   );

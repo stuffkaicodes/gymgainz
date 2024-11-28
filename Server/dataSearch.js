@@ -1,6 +1,4 @@
 import axios from 'axios';
-import { google } from 'googleapis';
-import express from "express"; 
 import dotenv from 'dotenv';
 
 dotenv.config();
@@ -9,22 +7,26 @@ dotenv.config();
 const dataSearch = async (exerciseName) => {
     try {
         // GET IMAGES FROM GOOGLE
-        const apiKey = process.env.API_KEY;
-        const cx = process.env.CX;
+        // const apiKey = process.env.API_KEY;
+        // const cx = process.env.CX;
+
+        console.log('gif ' + exerciseName);
 
         // if (string == 'image'){
-        const imageResponse = await axios.get('https://www.googleapis.com/customsearch/v1', {
+        const imageResponse = await axios.get("https://www.googleapis.com/customsearch/v1", {
             params: {
-                key: apiKey,
-                cx: cx,
-                q: 'gif ' + exerciseName ,
-                searchType: 'image',
-                num: 1 // Number of images to return per query
+                key: process.env.API,
+                cx: process.env.CX,
+                q: "gif " + exerciseName ,
+                searchType: "image",
+                num: 1, // Number of images to return per query
+                alt: "json",
         }});
 
-        // console.log(imageResponse.data.items[0].link)
+        console.log(imageResponse.data)
 
-        return await imageResponse.data.items[0].link
+        // return await imageResponse.data
+
         // }
         // await axios.get('https://www.googleapis.com/customsearch/v1', {
         //     params: {
@@ -37,7 +39,7 @@ const dataSearch = async (exerciseName) => {
         // return descriptionResponse;
 
     } catch (error){
-        return 'No images or descriptions found'
+        console.log('Error:', error);
     }
 }
 

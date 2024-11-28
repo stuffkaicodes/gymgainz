@@ -58,14 +58,13 @@ export const fetchData = async (route, index = null, buttonData) => {
     if (index){ 
         const exerciseType = await exerciseTypeSearch(rows, buttonData[index][0])
         if (exerciseType != exercises[route][index]){
-            buttonData[index] = await makeDataStructure(rows, exerciseType[0])
+            buttonData[index] = await makeDataStructure(exerciseType[0])
             return buttonData
 
         } else{
-            buttonData[index] = await makeDataStructure(rows, exercises[route][index]);
+            buttonData[index] = await makeDataStructure(exercises[route][index]);
             return buttonData
         }
-
     }
 
     const numberOfLoops = exercises[route].length;
@@ -74,19 +73,18 @@ export const fetchData = async (route, index = null, buttonData) => {
     for (let i = 0; i <  numberOfLoops; i++ ){
 
         // create 3d array in this format [[exercise1info], [exercise2info]....]
-        newButtonData.push(await makeDataStructure(rows, exercises[route][i]));
+        newButtonData.push(await makeDataStructure(exercises[route][i]));
     }
 
     return newButtonData;
 }
 
 // create an array (data) with generated information in this format [exerciseName, imageResponse, descriptionResponse]
-const makeDataStructure = async (rows, item) => {
+const makeDataStructure = async (item) => {
     const data = []; 
     const exerciseName = await exerciseSearch(rows, item);
-    // data[1] = await dataSearch(exerciseName);
     data[0] = exerciseName;
-    data[2] = ''
+    // data[1] = await dataSearch(exerciseName);
 
     return data
 }

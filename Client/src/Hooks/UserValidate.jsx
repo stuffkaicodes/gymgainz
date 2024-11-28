@@ -1,17 +1,13 @@
 import React, { useState } from 'react'; 
 
-function ValidateInputs() {
+function ValidateInputs(name, username, password) {
 
-    const [username, setUsername] = useState("");
-    const [password, setPassword] = useState("");
-    const [name, setName] = useState("");
-    const [errors, setErrors] = useState({ name:"", username: "", password: "" });
-
-    
     const newErrors = { name:"", username: "", password: "" };
 
     if (!name){
         newErrors.name = 'Name should not be empty.'
+    } else{
+        delete newErrors.name;
     }
 
     // Username Validation
@@ -21,6 +17,8 @@ function ValidateInputs() {
         newErrors.username = "Username must be at least 3 characters long.";
         } else if (!/^[a-zA-Z0-9_]+$/.test(username)) {
         newErrors.username = "Username can only contain letters, numbers, and underscores.";
+    } else{ 
+        delete newErrors.username;
     }
     
         // Password Validation
@@ -30,10 +28,11 @@ function ValidateInputs() {
         newErrors.password = "Password must be at least 8 characters long.";
         } else if (!/(?=.*[A-Za-z])(?=.*\d)/.test(password)) {
         newErrors.password = "Password must contain at least one letter and one number.";
+    } else{ 
+        delete newErrors.password;
     }
 
-    setErrors(newErrors);
-    return !newErrors.username && !newErrors.password; // Return true if no errors
+    return newErrors; // Return true if no errors
     };
 
 export default ValidateInputs;

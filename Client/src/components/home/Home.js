@@ -15,7 +15,7 @@ const Home = () => {
   }
 
   function handleClickPast() {
-    navigate(`/past`); 
+    navigate(`/record`); 
   }
 
   return (

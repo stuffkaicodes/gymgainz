@@ -2,8 +2,11 @@ import React, { useState, useEffect, useMemo} from 'react';
 import { Input, Box, Button, FormControl, FormLabel, InputGroup, InputRightElement, Text, FormErrorMessage } from "@chakra-ui/react";
 import { useNavigate } from 'react-router-dom'; 
 import ValidateInputs from '../Hooks/UserValidate.jsx';
+import { useAuth } from "../AuthContext";
 
 function Login() {
+
+    const { login, setUser } = useAuth();
 
     const navigate = useNavigate();
 
@@ -26,14 +29,20 @@ function Login() {
                     },
                     body: JSON.stringify(user),
                 });
+                const res = await response.json()
                 if (response.status == 200){
+                    const token = res.token
+                    //  // Set a cookie with the token, expires in 7 days
+                    await login(token, username);
+                    // console.log("login: ",token, username);
                     alert(`Welcome back to Gymgainz ${username}`)
-                    navigate(`/`); 
-                } else if (response.message =='username') {
-                    const newErrors = { username: 'Username does not exist!', password: ''}
+                    navigate(`/home`); 
+                } 
+                else if (res.message =='Password') {
+                    const newErrors = { username: '', password: 'Password is incorrect. 5 attempts left.'}
                     setErrors(newErrors);
                 } else{
-                    const newErrors = { username: '', password: 'Incorrect Password!'}
+                    const newErrors = { username: "User does not exist in the system. Please register an account.", password: ''}
                     setErrors(newErrors);
                 }
             } catch(error){

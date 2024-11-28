@@ -3,23 +3,30 @@ import { Box, IconButton, Text, Divider, Table, Thead, Tbody, Tr, Th, Td, TableC
 import { useNavigate } from 'react-router-dom';
 import { FaArrowLeft, FaSync } from 'react-icons/fa';
 import { useTable, useSortBy } from 'react-table';
+import { useAuth } from "../../AuthContext";
 
 function PastRoutines() {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
   const [update, setUpdate] = useState(false);
 
-  const navigate = useNavigate();
+  const {user, token } = useAuth();
 
-  const goHome = () => {
-    navigate(`/`);
-  };
+   const navigate = useNavigate();
 
   const fetchResults = async () => {
     try {
-      const response = await fetch('http://localhost:3001/record/');
+      const params = {token, user} 
+      const response = await fetch('http://localhost:3001/record/', {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(params),
+      });
       if (!response.ok) {
-        throw new Error('Network response was not ok');
+        const res = await response.json()
+        alert(res.error)
       }
       const fetchedData = await response.json();
       console.log(fetchedData);
@@ -60,7 +67,7 @@ function PastRoutines() {
     },
     {
       Header: 'Exercises',
-      accessor: 'exercise_name',   
+      accessor: 'exercise',   
       style: { flex: '0 1 35%' }, // Style for Column B
       Cell: ({ value }) => (
         <Text whiteSpace="normal" overflowWrap="break-word" width="100%">
@@ -70,7 +77,7 @@ function PastRoutines() {
     },
     {
       Header: 'Sets',
-      accessor: 'sets',
+      accessor: 'number_of_sets',
       style: styles, // Style for Column C
     },
     {
@@ -80,7 +87,7 @@ function PastRoutines() {
     },
     {
       Header: 'Reps',
-      accessor: 'reps',
+      accessor: 'number_of_times',
       style: styles, // Style for Column E
     },
   ], []);

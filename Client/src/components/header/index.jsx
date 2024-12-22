@@ -31,7 +31,7 @@ function Header() {
 
   return (
 
-      <Box zIndex='99' top='0' left='0' position='fixed' width='100%' p={4} justifyContent='space-between' backgroundColor="#282c34" color='white'>
+      <Box zIndex='99' top='0' left='0' position='fixed' width='100%' p={2.5} justifyContent='space-between' backgroundColor="#282c34" color='white'>
       <Flex alignItems="center">
         <Box width='33.33%'>
         <LiveClock width='20%'/>
@@ -39,9 +39,9 @@ function Header() {
 
         {/* Centered Home Icon */}
         {/* <Spacer width='20%' /> */}
-        <Box width='33.33%' display='inline-block' justifyContent='center'>
-        <Icon as={IoHome} onClick={goHome} fontSize='2xl'/>
-        <Text > {isLoggedIn && user ? user : null} </Text>
+        <Box width='33.33%' display='flex' flexDirection='column' justifyContent='center' gap='0.25rem'>
+        <Icon width='100%' as={IoHome} onClick={goHome} fontSize='2xl'/>
+        <Text width='100%' textAlign='center'> {isLoggedIn && user ? user : null} </Text>
         </Box>
         {/* <Spacer width='20%' /> */}
 

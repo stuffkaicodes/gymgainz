@@ -1,0 +1,337 @@
+Script started on Wed Apr 16 15:57:39 2025
+/Users/limenkai/.zshrc:2: no such file or directory: /usr/libexc/java_home
+/Users/limenkai/.zshrc:export:4: not valid in this context: /usr/local/mysql-9.0.1-macos14-arm64/bin
+[1m[7m%[27m[1m[0m                                                         [0m[27m[24m[Jlimenkai@Kais-MacBook-Air Client % [K[?2004hnnpm build[?2004l
+Unknown command: "build"
+
+
+Did you mean this?
+  npm run build # run the "build" package script
+To see a list of supported npm commands, run:
+  npm help
+[1G[0K[1m[7m%[27m[1m[0m                                                         [0m[27m[24m[Jlimenkai@Kais-MacBook-Air Client % [K[?2004hnnom run b start [?2004l
+zsh: command not found: nom
+[1m[7m%[27m[1m[0m                                                         [0m[27m[24m[Jlimenkai@Kais-MacBook-Air Client % [K[?2004hnnpm st  run start [?2004l
+
+> gymgainz@0.1.0 start
+> react-scripts start
+
+[1G[0Ksh: react-scripts: command not found
+[1G[0K⠙[1G[0K[1m[7m%[27m[1m[0m                                                         [0m[27m[24m[Jlimenkai@Kais-MacBook-Air Client % [K[?2004hnnpm st  run build[?2004l
+
+> gymgainz@0.1.0 build
+> react-scripts build
+
+[1G[0Ksh: react-scripts: command not found
+[1G[0K⠙[1G[0K[1m[7m%[27m[1m[0m                                                         [0m[27m[24m[Jlimenkai@Kais-MacBook-Air Client % [K[?2004hrreact run build[?2004l
+zsh: command not found: react
+[1m[7m%[27m[1m[0m                                                         [0m[27m[24m[Jlimenkai@Kais-MacBook-Air Client % [K[?2004hnnpm install[?2004l
+[1G[0K⠙[1G[0K⠹[1G[0K⠸[1G[0K⠼[1G[0K⠴[1G[0K⠦[1G[0K⠧[1G[0K⠇[1G[0K⠏[1G[0K⠋[1G[0K⠙[1G[0K⠹[1G[0K⠸[1G[0K⠼[1G[0K⠴[1G[0K⠦[1G[0K⠧[1G[0K⠇[1G[0K⠏[1G[0K⠋[1G[0K⠙[1G[0K⠹[1G[0K⠸[1G[0K⠼[1G[0K⠴[1G[0K⠦[1G[0K⠧[1G[0K⠇[1G[0K⠏[1G[0K⠋[1G[0K⠙[1G[0K⠹[1G[0K⠸[1G[0K⠼[1G[0K⠴[1G[0K⠦[1G[0K⠧[1G[0K⠇[1G[0K⠏[1G[0K⠋[1G[0K⠙[1G[0K⠹[1G[0K⠸[1G[0K⠼[1G[0K⠴[1G[0K⠦[1G[0K⠧[1G[0K⠇[1G[0K⠏[1G[0K⠋[1G[0K⠙[1G[0K⠹[1G[0K⠸[1G[0K⠼[1G[0K⠴[1G[0K⠦[1G[0K⠧[1G[0K⠇[1G[0K⠏[1G[0K⠋[1G[0K⠙[1G[0K⠹[1G[0K⠸[1G[0K⠼[1G[0K⠴[1G[0K⠦[1G[0K⠧[1G[0K⠇[1G[0K⠏[1G[0K⠋[1G[0K⠙[1G[0K⠹[1G[0K⠸[1G[0K⠼[1G[0K⠴[1G[0K⠦[1G[0K⠧[1G[0K⠇[1G[0K⠏[1G[0K⠋[1G[0K⠙[1G[0K⠹[1G[0K⠸[1G[0K⠼[1G[0K⠴[1G[0K⠦[1G[0K⠧[1G[0K⠇[1G[0K⠏[1G[0K⠋[1G[0K⠙[1G[0K⠹[1G[0K⠸[1G[0K⠼[1G[0K⠴[1G[0K⠦[1G[0K⠧[1G[0K⠇[1G[0K⠏[1G[0K⠋[1G[0K⠙[1G[0K⠹[1G[0K⠸[1G[0K⠼[1G[0K⠴[1G[0K⠦[1G[0K⠧[1G[0K⠇[1G[0K⠏[1G[0K⠋[1G[0K⠙[1G[0K⠹[1G[0K⠸[1G[0K⠼[1G[0K⠴[1G[0K⠦[1G[0K⠧[1G[0K⠇[1G[0K⠏[1G[0K⠋[1G[0K⠙[1G[0K⠹[1G[0K⠸[1G[0K⠼[1G[0K⠴[1G[0K⠦[1G[0K⠧[1G[0K⠇[1G[0K⠏[1G[0K⠋[1G[0K⠙[1G[0K⠹[1G[0K⠸[1G[0K⠼[1G[0K⠴[1G[0K⠦[1G[0K⠧[1G[0K⠇[1G[0K⠏[1G[0K⠋[1G[0K⠙[1G[0K⠹[1G[0K⠸[1G[0K⠼[1G[0K⠴[1G[0K⠦[1G[0K⠧[1G[0K⠇[1G[0K⠏[1G[0K⠋[1G[0K⠙[1G[0K⠹[1G[0K⠸[1G[0K⠼[1G[0K⠴[1G[0K⠦[1G[0K⠧[1G[0K⠇[1G[0K⠏[1G[0K⠋[1G[0K⠙[1G[0K⠹[1G[0K⠸[1G[0K⠼[1G[0K⠴[1G[0K⠦[1G[0K⠧[1G[0K⠇[1G[0K⠏[1G[0K⠋[1G[0K⠙[1G[0K⠹[1G[0K⠸[1G[0K⠼[1G[0K⠴[1G[0K⠦[1G[0K⠧[1G[0K⠇[1G[0K⠏[1G[0K⠋[1G[0K⠙[1G[0K⠹[1G[0K⠸[1G[0K⠼[1G[0K⠴[1G[0K⠦[1G[0K⠧[1G[0K⠇[1G[0K⠏[1G[0K⠋[1G[0K⠙[1G[0K⠹[1G[0K⠸[1G[0K⠼[1G[0K⠴[1G[0K⠦[1G[0K⠧[1G[0K⠇[1G[0K⠏[1G[0K⠋[1G[0K⠙[1G[0K⠹[1G[0K⠸[1G[0K⠼[1G[0K⠴[1G[0K⠦[1G[0K⠧[1G[0K⠇[1G[0K⠏[1G[0K⠋[1G[0K⠙[1G[0K⠹[1G[0K⠸[1G[0K⠼[1G[0K⠴[1G[0K⠦[1G[0K⠧[1G[0K⠇[1G[0K⠏[1G[0K⠋[1G[0K⠙[1G[0K⠹[1G[0K⠸[1G[0K⠼[1G[0K⠴[1G[0K⠦[1G[0K⠧[1G[0K⠇[1G[0K⠏[1G[0K⠋[1G[0K⠙[1G[0K⠹[1G[0K⠸[1G[0K⠼[1G[0K⠴[1G[0K⠦[1G[0K⠧[1G[0K⠇[1G[0K⠏[1G[0K⠋[1G[0K⠙[1G[0K⠹[1G[0K⠸[1G[0K⠼[1G[0K⠴[1G[0K⠦[1G[0K⠧[1G[0K⠇[1G[0K⠏[1G[0K⠋[1G[0K⠙[1G[0K⠹[1G[0K⠸[1G[0K⠼[1G[0K⠴[1G[0K⠦[1G[0K⠧[1G[0K⠇[1G[0K⠏[1G[0K⠋[1G[0K⠙[1G[0K⠹[1G[0K⠸[1G[0K⠼[1G[0K⠴[1G[0K⠦[1G[0K⠧[1G[0K⠇[1G[0K⠏[1G[0K⠋[1G[0K⠙[1G[0K⠹[1G[0K⠸[1G[0K⠼[1G[0K⠴[1G[0K⠦[1G[0K⠧[1G[0K⠇[1G[0K⠏[1G[0K⠋[1G[0K⠙[1G[0K⠹[1G[0K⠸[1G[0K⠼[1G[0K⠴[1G[0K⠦[1G[0K⠧[1G[0K⠇[1G[0K⠏[1G[0K⠋[1G[0K⠙[1G[0K⠹[1G[0K⠸[1G[0K⠼[1G[0K⠴[1G[0K⠦[1G[0K⠧[1G[0K⠇[1G[0K⠏[1G[0K⠋[1G[0K⠙[1G[0K⠹[1G[0K⠸[1G[0K⠼[1G[0K⠴[1G[0K⠦[1G[0K⠧[1G[0K⠇[1G[0K⠏[1G[0K⠋[1G[0K⠙[1G[0K⠹[1G[0K⠸[1G[0K⠼[1G[0K⠴[1G[0K⠦[1G[0K⠧[1G[0K⠇[1G[0K⠏[1G[0K⠋[1G[0K⠙[1G[0K⠹[1G[0K⠸[1G[0K⠼[1G[0K⠴[1G[0K⠦[1G[0K⠧[1G[0K⠇[1G[0K⠏[1G[0K⠋[1G[0K⠙[1G[0K⠹[1G[0K⠸[1G[0K⠼[1G[0K⠴[1G[0K⠦[1G[0K⠧[1G[0K⠇[1G[0K⠏[1G[0K⠋[1G[0K⠙[1G[0K⠹[1G[0K⠸[1G[0K⠼[1G[0K⠴[1G[0K⠦[1G[0K⠧[1G[0K⠇[1G[0K⠏[1G[0K⠋[1G[0K⠙[1G[0K⠹[1G[0K⠸[1G[0K⠼[1G[0K⠴[1G[0K⠦[1G[0K⠧[1G[0K⠇[1G[0K⠏[1G[0K⠋[1G[0K⠙[1G[0K⠹[1G[0K⠸[1G[0K⠼[1G[0K⠴[1G[0K⠦[1G[0K⠧[1G[0K⠇[1G[0K⠏[1G[0K⠋[1G[0K⠙[1G[0K⠹[1G[0K⠸[1G[0K⠼[1G[0K⠴[1G[0K⠦[1G[0K⠧[1G[0K⠇[1G[0K⠏[1G[0K⠋[1G[0K⠙[1G[0K⠹[1G[0K⠸[1G[0K⠼[1G[0K⠴[1G[0K⠦[1G[0K⠧[1G[0K⠇[1G[0K⠏[1G[0K⠋[1G[0K⠙[1G[0K⠹[1G[0K⠸[1G[0K⠼[1G[0K⠴[1G[0K⠦[1G[0K⠧[1G[0K⠇[1G[0K⠏[1G[0K⠋[1G[0K⠙[1G[0K⠹[1G[0K⠸[1G[0K⠼[1G[0K⠴[1G[0K⠦[1G[0K⠧[1G[0K⠇[1G[0K⠏[1G[0K⠋[1G[0K⠙[1G[0K⠹[1G[0K⠸[1G[0K⠼[1G[0K⠴[1G[0K⠦[1G[0K⠧[1G[0K⠇[1G[0K⠏[1G[0K⠋[1G[0K⠙[1G[0K⠹[1G[0K⠸[1G[0K⠼[1G[0K⠴[1G[0K⠦[1G[0K⠧[1G[0K⠇[1G[0K⠏[1G[0K⠋[1G[0K⠙[1G[0K⠹[1G[0K⠸[1G[0K⠼[1G[0K⠴[1G[0K⠦[1G[0K⠧[1G[0K⠇[1G[0K⠏[1G[0K⠋[1G[0K⠙[1G[0K⠹[1G[0K⠸[1G[0K⠼[1G[0K⠴[1G[0K⠦[1G[0K⠧[1G[0K⠇[1G[0K⠏[1G[0K⠋[1G[0K⠙[1G[0K⠹[1G[0K⠸[1G[0K⠼[1G[0K⠴[1G[0K⠦[1G[0K⠧[1G[0K⠇[1G[0K⠏[1G[0K⠋[1G[0K⠙[1G[0K[1mnpm[22m [33mwarn[39m [94mdeprecated[39m sourcemap-codec@1.4.8: Please use @jridgewell/sourcemap-codec instead
+[1G[0K⠙[1G[0K[1mnpm[22m [33mwarn[39m [94mdeprecated[39m rollup-plugin-terser@7.0.2: This package has been deprecated and is no longer maintained. Please use @rollup/plugin-terser
+[1G[0K⠙[1G[0K[1mnpm[22m [33mwarn[39m [94mdeprecated[39m workbox-cacheable-response@6.6.0: workbox-background-sync@6.6.0
+[1G[0K⠹[1G[0K[1mnpm[22m [33mwarn[39m [94mdeprecated[39m workbox-google-analytics@6.6.0: It is not compatible with newer versions of GA starting with v4, as long as you are using GAv3 it should be ok, but the package is not longer being maintained
+[1G[0K⠹[1G[0K⠸[1G[0K⠼[1G[0K⠴[1G[0K⠦[1G[0K[1mnpm[22m [33mwarn[39m [94mdeprecated[39m q@1.5.1: You or someone you depend on is using Q, the JavaScript Promise library that gave JavaScript developers strong feelings about promises. They can almost certainly migrate to the native JavaScript promise now. Thank you literally everyone for joining me in this bet against the odds. Be excellent to each other.
+[1mnpm[22m [33mwarn[39m [94mdeprecated[39m
+[1mnpm[22m [33mwarn[39m [94mdeprecated[39m (For a CapTP with native promises, see @endo/eventual-send and @endo/captp)
+[1G[0K⠦[1G[0K[1mnpm[22m [33mwarn[39m [94mdeprecated[39m stable@0.1.8: Modern JS already guarantees Array#sort() is a stable sort, so this library is deprecated. See the compatibility table on MDN: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort#browser_compatibility
+[1G[0K⠧[1G[0K⠇[1G[0K⠏[1G[0K⠋[1G[0K⠙[1G[0K⠹[1G[0K⠸[1G[0K[1mnpm[22m [33mwarn[39m [94mdeprecated[39m w3c-hr-time@1.0.2: Use your platform's native performance.now() and performance.timeOrigin.
+[1G[0K⠸[1G[0K[1mnpm[22m [33mwarn[39m [94mdeprecated[39m domexception@2.0.1: Use your platform's native DOMException instead
+[1G[0K⠸[1G[0K[1mnpm[22m [33mwarn[39m [94mdeprecated[39m abab@2.0.6: Use your platform's native atob() and btoa() methods instead
+[1G[0K⠼[1G[0K⠴[1G[0K[1mnpm[22m [33mwarn[39m [94mdeprecated[39m inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+[1G[0K⠴[1G[0K[1mnpm[22m [33mwarn[39m [94mdeprecated[39m glob@7.2.3: Glob versions prior to v9 are no longer supported
+[1G[0K⠴[1G[0K⠦[1G[0K[1mnpm[22m [33mwarn[39m [94mdeprecated[39m rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported
+[1G[0K⠦[1G[0K⠧[1G[0K⠇[1G[0K⠏[1G[0K⠋[1G[0K[1mnpm[22m [33mwarn[39m [94mdeprecated[39m @humanwhocodes/object-schema@2.0.3: Use @eslint/object-schema instead
+[1G[0K⠋[1G[0K[1mnpm[22m [33mwarn[39m [94mdeprecated[39m @humanwhocodes/config-array@0.13.0: Use @eslint/config-array instead
+[1G[0K⠙[1G[0K⠹[1G[0K[1mnpm[22m [33mwarn[39m [94mdeprecated[39m @babel/plugin-proposal-optional-chaining@7.21.0: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-optional-chaining instead.
+[1G[0K⠹[1G[0K[1mnpm[22m [33mwarn[39m [94mdeprecated[39m @babel/plugin-proposal-numeric-separator@7.18.6: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-numeric-separator instead.
+[1G[0K⠸[1G[0K[1mnpm[22m [33mwarn[39m [94mdeprecated[39m @babel/plugin-proposal-private-methods@7.18.6: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-private-methods instead.
+[1G[0K⠸[1G[0K[1mnpm[22m [33mwarn[39m [94mdeprecated[39m @babel/plugin-proposal-nullish-coalescing-operator@7.18.6: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-nullish-coalescing-operator instead.
+[1G[0K⠸[1G[0K[1mnpm[22m [33mwarn[39m [94mdeprecated[39m @babel/plugin-proposal-class-properties@7.18.6: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-class-properties instead.
+[1G[0K⠸[1G[0K⠼[1G[0K[1mnpm[22m [33mwarn[39m [94mdeprecated[39m svgo@1.3.2: This SVGO version is no longer supported. Upgrade to v2.x.x.
+[1G[0K⠼[1G[0K⠴[1G[0K⠦[1G[0K⠧[1G[0K⠇[1G[0K⠏[1G[0K⠋[1G[0K⠙[1G[0K⠹[1G[0K[1mnpm[22m [33mwarn[39m [94mdeprecated[39m eslint@8.57.1: This version is no longer supported. Please see https://eslint.org/version-support for other options.
+[1G[0K⠹[1G[0K⠸[1G[0K⠼[1G[0K⠴[1G[0K⠦[1G[0K⠧[1G[0K⠇[1G[0K⠏[1G[0K⠋[1G[0K⠙[1G[0K⠹[1G[0K⠸[1G[0K⠼[1G[0K⠴[1G[0K⠦[1G[0K⠧[1G[0K⠇[1G[0K⠏[1G[0K⠋[1G[0K⠙[1G[0K⠹[1G[0K⠸[1G[0K⠼[1G[0K⠴[1G[0K⠦[1G[0K[1mnpm[22m [33mwarn[39m [94mdeprecated[39m @babel/plugin-proposal-private-property-in-object@7.21.11: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-private-property-in-object instead.
+[1G[0K⠦[1G[0K⠧[1G[0K⠇[1G[0K⠏[1G[0K⠋[1G[0K⠙[1G[0K⠹[1G[0K⠸[1G[0K⠼[1G[0K⠴[1G[0K⠦[1G[0K⠧[1G[0K⠇[1G[0K⠏[1G[0K⠋[1G[0K⠙[1G[0K⠹[1G[0K⠸[1G[0K⠼[1G[0K⠴[1G[0K⠦[1G[0K⠧[1G[0K⠇[1G[0K⠏[1G[0K⠋[1G[0K⠙[1G[0K⠹[1G[0K⠸[1G[0K
+added 1578 packages, and audited 1579 packages in 45s
+[1G[0K⠸[1G[0K
+[1G[0K⠸[1G[0K277 packages are looking for funding
+[1G[0K⠸[1G[0K  run `npm fund` for details
+[1G[0K⠸[1G[0K
+[31m[1m8[22m[39m vulnerabilities (2 [33m[1mmoderate[22m[39m, 6 [31m[1mhigh[22m[39m)
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+[1G[0K⠸[1G[0K[1m[7m%[27m[1m[0m                                                         [0m[27m[24m[Jlimenkai@Kais-MacBook-Air Client % [K[?2004hnnpm fix    audix  t fix [?2004l
+[1G[0K⠙[1G[0K⠹[1G[0K⠸[1G[0K⠼[1G[0K⠴[1G[0K⠦[1G[0K⠧[1G[0K⠇[1G[0K⠏[1G[0K⠋[1G[0K
+added 1 package, and audited 1580 packages in 1s
+[1G[0K⠋[1G[0K
+[1G[0K⠋[1G[0K277 packages are looking for funding
+[1G[0K⠋[1G[0K  run `npm fund` for details
+[1G[0K⠋[1G[0K
+[1m# npm audit report[22m
+
+[1mnth-check[22m  <2.0.1
+Severity: [31m[1mhigh[22m[39m
+[1mInefficient Regular Expression Complexity in nth-check[22m - https://github.com/advisories/GHSA-rp65-9cf3-cjxr
+[33m[1mfix available[22m[39m via `npm audit fix --force`
+Will install react-scripts@3.0.1, which is a breaking change
+[2mnode_modules/svgo/node_modules/nth-check[22m
+  [1mcss-select[22m  <=3.1.0
+  Depends on vulnerable versions of [1mnth-check[22m
+  [2mnode_modules/svgo/node_modules/css-select[22m
+    [1msvgo[22m  1.0.0 - 1.3.2
+    Depends on vulnerable versions of [1mcss-select[22m
+    [2mnode_modules/svgo[22m
+      [1m@svgr/plugin-svgo[22m  <=5.5.0
+      Depends on vulnerable versions of [1msvgo[22m
+      [2mnode_modules/@svgr/plugin-svgo[22m
+        [1m@svgr/webpack[22m  4.0.0 - 5.5.0
+        Depends on vulnerable versions of [1m@svgr/plugin-svgo[22m
+        [2mnode_modules/@svgr/webpack[22m
+          [1mreact-scripts[22m  >=2.1.4
+          Depends on vulnerable versions of [1m@svgr/webpack[22m
+          Depends on vulnerable versions of [1mresolve-url-loader[22m
+          [2mnode_modules/react-scripts[22m
+
+[1mpostcss[22m  <8.4.31
+Severity: [33m[1mmoderate[22m[39m
+[1mPostCSS line return parsing error[22m - https://github.com/advisories/GHSA-7fh5-64p2-3v2j
+[33m[1mfix available[22m[39m via `npm audit fix --force`
+Will install react-scripts@3.0.1, which is a breaking change
+[2mnode_modules/resolve-url-loader/node_modules/postcss[22m
+  [1mresolve-url-loader[22m  0.0.1-experiment-postcss || 3.0.0-alpha.1 - 4.0.0
+  Depends on vulnerable versions of [1mpostcss[22m
+  [2mnode_modules/resolve-url-loader[22m
+
+[31m[1m8[22m[39m vulnerabilities (2 [33m[1mmoderate[22m[39m, 6 [31m[1mhigh[22m[39m)
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+[1G[0K⠋[1G[0K[1m[7m%[27m[1m[0m                                                         [0m[27m[24m[Jlimenkai@Kais-MacBook-Air Client % [K[?2004hnnpm ua  audit [?2004l
+[1G[0K⠙[1G[0K⠹[1G[0K⠸[1G[0K⠼[1G[0K⠴[1G[0K⠦[1G[0K[1m# npm audit report[22m
+
+[1mnth-check[22m  <2.0.1
+Severity: [31m[1mhigh[22m[39m
+[1mInefficient Regular Expression Complexity in nth-check[22m - https://github.com/advisories/GHSA-rp65-9cf3-cjxr
+[33m[1mfix available[22m[39m via `npm audit fix --force`
+Will install react-scripts@3.0.1, which is a breaking change
+[2mnode_modules/svgo/node_modules/nth-check[22m
+  [1mcss-select[22m  <=3.1.0
+  Depends on vulnerable versions of [1mnth-check[22m
+  [2mnode_modules/svgo/node_modules/css-select[22m
+    [1msvgo[22m  1.0.0 - 1.3.2
+    Depends on vulnerable versions of [1mcss-select[22m
+    [2mnode_modules/svgo[22m
+      [1m@svgr/plugin-svgo[22m  <=5.5.0
+      Depends on vulnerable versions of [1msvgo[22m
+      [2mnode_modules/@svgr/plugin-svgo[22m
+        [1m@svgr/webpack[22m  4.0.0 - 5.5.0
+        Depends on vulnerable versions of [1m@svgr/plugin-svgo[22m
+        [2mnode_modules/@svgr/webpack[22m
+          [1mreact-scripts[22m  >=2.1.4
+          Depends on vulnerable versions of [1m@svgr/webpack[22m
+          Depends on vulnerable versions of [1mresolve-url-loader[22m
+          [2mnode_modules/react-scripts[22m
+
+[1mpostcss[22m  <8.4.31
+Severity: [33m[1mmoderate[22m[39m
+[1mPostCSS line return parsing error[22m - https://github.com/advisories/GHSA-7fh5-64p2-3v2j
+[33m[1mfix available[22m[39m via `npm audit fix --force`
+Will install react-scripts@3.0.1, which is a breaking change
+[2mnode_modules/resolve-url-loader/node_modules/postcss[22m
+  [1mresolve-url-loader[22m  0.0.1-experiment-postcss || 3.0.0-alpha.1 - 4.0.0
+  Depends on vulnerable versions of [1mpostcss[22m
+  [2mnode_modules/resolve-url-loader[22m
+
+[31m[1m8[22m[39m vulnerabilities (2 [33m[1mmoderate[22m[39m, 6 [31m[1mhigh[22m[39m)
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+[1G[0K⠦[1G[0K[1m[7m%[27m[1m[0m                                                         [0m[27m[24m[Jlimenkai@Kais-MacBook-Air Client % [K[?2004hnnpm audit fix --foc rces [K[A[56C[K[1B[K[A[56C[?2004l[1B[1mnpm[22m [33mwarn[39m [94musing --force[39m Recommended protections disabled.
+[1G[0K⠙[1G[0K⠹[1G[0K⠸[1G[0K⠼[1G[0K⠴[1G[0K⠦[1G[0K⠧[1G[0K⠇[1G[0K⠏[1G[0K⠋[1G[0K⠙[1G[0K⠹[1G[0K⠸[1G[0K⠼[1G[0K⠴[1G[0K⠦[1G[0K⠧[1G[0K⠇[1G[0K⠏[1G[0K⠋[1G[0K⠙[1G[0K⠹[1G[0K⠸[1G[0K⠼[1G[0K⠴[1G[0K⠦[1G[0K⠧[1G[0K⠇[1G[0K⠏[1G[0K⠋[1G[0K⠙[1G[0K⠹[1G[0K⠸[1G[0K⠼[1G[0K⠴[1G[0K⠦[1G[0K⠧[1G[0K⠇[1G[0K⠏[1G[0K⠋[1G[0K⠙[1G[0K⠹[1G[0K⠸[1G[0K⠼[1G[0K
+up to date, audited 1580 packages in 4s
+[1G[0K⠼[1G[0K
+[1G[0K⠼[1G[0K277 packages are looking for funding
+[1G[0K⠼[1G[0K  run `npm fund` for details
+[1G[0K⠼[1G[0K
+[1m# npm audit report[22m
+
+[1mnth-check[22m  <2.0.1
+Severity: [31m[1mhigh[22m[39m
+[1mInefficient Regular Expression Complexity in nth-check[22m - https://github.com/advisories/GHSA-rp65-9cf3-cjxr
+[33m[1mfix available[22m[39m via `npm audit fix --force`
+Will install react-scripts@3.0.1, which is a breaking change
+[2mnode_modules/svgo/node_modules/nth-check[22m
+  [1mcss-select[22m  <=3.1.0
+  Depends on vulnerable versions of [1mnth-check[22m
+  [2mnode_modules/svgo/node_modules/css-select[22m
+    [1msvgo[22m  1.0.0 - 1.3.2
+    Depends on vulnerable versions of [1mcss-select[22m
+    [2mnode_modules/svgo[22m
+      [1m@svgr/plugin-svgo[22m  <=5.5.0
+      Depends on vulnerable versions of [1msvgo[22m
+      [2mnode_modules/@svgr/plugin-svgo[22m
+        [1m@svgr/webpack[22m  4.0.0 - 5.5.0
+        Depends on vulnerable versions of [1m@svgr/plugin-svgo[22m
+        [2mnode_modules/@svgr/webpack[22m
+          [1mreact-scripts[22m  >=2.1.4
+          Depends on vulnerable versions of [1m@svgr/webpack[22m
+          Depends on vulnerable versions of [1mresolve-url-loader[22m
+          [2mnode_modules/react-scripts[22m
+
+[1mpostcss[22m  <8.4.31
+Severity: [33m[1mmoderate[22m[39m
+[1mPostCSS line return parsing error[22m - https://github.com/advisories/GHSA-7fh5-64p2-3v2j
+[33m[1mfix available[22m[39m via `npm audit fix --force`
+Will install react-scripts@3.0.1, which is a breaking change
+[2mnode_modules/resolve-url-loader/node_modules/postcss[22m
+  [1mresolve-url-loader[22m  0.0.1-experiment-postcss || 3.0.0-alpha.1 - 4.0.0
+  Depends on vulnerable versions of [1mpostcss[22m
+  [2mnode_modules/resolve-url-loader[22m
+
+[31m[1m8[22m[39m vulnerabilities (2 [33m[1mmoderate[22m[39m, 6 [31m[1mhigh[22m[39m)
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+[1G[0K⠼[1G[0K[1m[7m%[27m[1m[0m                                                         [0m[27m[24m[Jlimenkai@Kais-MacBook-Air Client % [K[?2004hnnpm start [?2004l
+
+> gymgainz@0.1.0 start
+> react-scripts start
+
+[1G[0K(node:29152) [DEP_WEBPACK_DEV_SERVER_ON_AFTER_SETUP_MIDDLEWARE] DeprecationWarning: 'onAfterSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:29152) [DEP_WEBPACK_DEV_SERVER_ON_BEFORE_SETUP_MIDDLEWARE] DeprecationWarning: 'onBeforeSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+[2J[3J[H[36mStarting the development server...[39m
+[36m[39m
+[2J[3J[H[33mCompiled with warnings.[39m
+[33m[39m
+[eslint] 
+src/Hooks/UserValidate.jsx
+  [1mLine 1:8:[22m   'React' is defined but never used     [33m[4mno-unused-vars[24m[39m
+  [1mLine 1:17:[22m  'useState' is defined but never used  [33m[4mno-unused-vars[24m[39m
+
+src/components/addNewExercise/index.js
+  [1mLine 35:13:[22m  'queryString' is assigned a value but never used                                                                          [33m[4mno-unused-vars[24m[39m
+  [1mLine 51:6:[22m   React Hook useEffect has missing dependencies: 'exercise' and 'name'. Either include them or remove the dependency array  [33m[4mreact-hooks/exhaustive-deps[24m[39m
+
+src/components/header/index.jsx
+  [1mLine 9:8:[22m  'Cookies' is defined but never used  [33m[4mno-unused-vars[24m[39m
+
+src/components/home/Home.js
+  [1mLine 3:23:[22m  'Flex' is defined but never used  [33m[4mno-unused-vars[24m[39m
+  [1mLine 3:29:[22m  'Icon' is defined but never used  [33m[4mno-unused-vars[24m[39m
+
+src/components/pastRoutines/index.js
+  [1mLine 4:20:[22m   'useEffect' is defined but never used               [33m[4mno-unused-vars[24m[39m
+  [1mLine 9:10:[22m   'data' is assigned a value but never used           [33m[4mno-unused-vars[24m[39m
+  [1mLine 9:16:[22m   'setData' is assigned a value but never used        [33m[4mno-unused-vars[24m[39m
+  [1mLine 10:10:[22m  'loading' is assigned a value but never used        [33m[4mno-unused-vars[24m[39m
+  [1mLine 19:9:[22m   'handleRefresh' is assigned a value but never used  [33m[4mno-unused-vars[24m[39m
+
+src/components/records/index.js
+  [1mLine 2:10:[22m   'Box' is defined but never used                                                                                  [33m[4mno-unused-vars[24m[39m
+  [1mLine 2:15:[22m   'IconButton' is defined but never used                                                                           [33m[4mno-unused-vars[24m[39m
+  [1mLine 2:33:[22m   'Divider' is defined but never used                                                                              [33m[4mno-unused-vars[24m[39m
+  [1mLine 4:10:[22m   'FaArrowLeft' is defined but never used                                                                          [33m[4mno-unused-vars[24m[39m
+  [1mLine 4:23:[22m   'FaSync' is defined but never used                                                                               [33m[4mno-unused-vars[24m[39m
+  [1mLine 10:10:[22m  'loading' is assigned a value but never used                                                                     [33m[4mno-unused-vars[24m[39m
+  [1mLine 15:10:[22m  'navigate' is assigned a value but never used                                                                    [33m[4mno-unused-vars[24m[39m
+  [1mLine 41:9:[22m   'handleRefresh' is assigned a value but never used                                                               [33m[4mno-unused-vars[24m[39m
+  [1mLine 48:6:[22m   React Hook useEffect has a missing dependency: 'fetchResults'. Either include it or remove the dependency array  [33m[4mreact-hooks/exhaustive-deps[24m[39m
+  [1mLine 93:6:[22m   React Hook useMemo has a missing dependency: 'styles'. Either include it or remove the dependency array          [33m[4mreact-hooks/exhaustive-deps[24m[39m
+
+src/components/routine/index.js
+  [1mLine 1:38:[22m   'useMemo' is defined but never used                                                                                                                                                                                                                              [33m[4mno-unused-vars[24m[39m
+  [1mLine 19:18:[22m  'setUpdate' is assigned a value but never used                                                                                                                                                                                                                   [33m[4mno-unused-vars[24m[39m
+  [1mLine 95:13:[22m  'response' is assigned a value but never used                                                                                                                                                                                                                    [33m[4mno-unused-vars[24m[39m
+  [1mLine 115:7:[22m  'handleSwipe' is assigned a value but never used                                                                                                                                                                                                                 [33m[4mno-unused-vars[24m[39m
+  [1mLine 159:6:[22m  React Hook useEffect has missing dependencies: 'fetchResults', 'initialData', and 'loading'. Either include them or remove the dependency array. You can also do a functional update 'setLoading(l => ...)' if you only need 'loading' in the 'setLoading' call  [33m[4mreact-hooks/exhaustive-deps[24m[39m
+  [1mLine 177:7:[22m  'onDelete' is assigned a value but never used                                                                                                                                                                                                                    [33m[4mno-unused-vars[24m[39m
+
+src/components/swipeableComponent/index.js
+  [1mLine 1:26:[22m  'useEffect' is defined but never used        [33m[4mno-unused-vars[24m[39m
+  [1mLine 5:12:[22m  'swiped' is assigned a value but never used  [33m[4mno-unused-vars[24m[39m
+
+src/pages/Login.jsx
+  [1mLine 1:27:[22m   'useEffect' is defined but never used         [33m[4mno-unused-vars[24m[39m
+  [1mLine 1:38:[22m   'useMemo' is defined but never used           [33m[4mno-unused-vars[24m[39m
+  [1mLine 9:20:[22m   'setUser' is assigned a value but never used  [33m[4mno-unused-vars[24m[39m
+  [1mLine 33:37:[22m  Expected '===' and instead saw '=='           [33m[4meqeqeq[24m[39m
+  [1mLine 41:38:[22m  Expected '===' and instead saw '=='           [33m[4meqeqeq[24m[39m
+
+src/pages/Register.jsx
+  [1mLine 1:27:[22m   'useEffect' is defined but never used  [33m[4mno-unused-vars[24m[39m
+  [1mLine 1:38:[22m   'useMemo' is defined but never used    [33m[4mno-unused-vars[24m[39m
+  [1mLine 38:37:[22m  Expected '===' and instead saw '=='    [33m[4meqeqeq[24m[39m
+
+Search for the [4m[33mkeywords[39m[24m to learn more about each warning.
+To ignore, add [36m// eslint-disable-next-line[39m to the line before.
+
+[1m[33mWARNING[39m[22m in [eslint] 
+src/Hooks/UserValidate.jsx
+  [1mLine 1:8:[22m   'React' is defined but never used     [33m[4mno-unused-vars[24m[39m
+  [1mLine 1:17:[22m  'useState' is defined but never used  [33m[4mno-unused-vars[24m[39m
+
+src/components/addNewExercise/index.js
+  [1mLine 35:13:[22m  'queryString' is assigned a value but never used                                                                          [33m[4mno-unused-vars[24m[39m
+  [1mLine 51:6:[22m   React Hook useEffect has missing dependencies: 'exercise' and 'name'. Either include them or remove the dependency array  [33m[4mreact-hooks/exhaustive-deps[24m[39m
+
+src/components/header/index.jsx
+  [1mLine 9:8:[22m  'Cookies' is defined but never used  [33m[4mno-unused-vars[24m[39m
+
+src/components/home/Home.js
+  [1mLine 3:23:[22m  'Flex' is defined but never used  [33m[4mno-unused-vars[24m[39m
+  [1mLine 3:29:[22m  'Icon' is defined but never used  [33m[4mno-unused-vars[24m[39m
+
+src/components/pastRoutines/index.js
+  [1mLine 4:20:[22m   'useEffect' is defined but never used               [33m[4mno-unused-vars[24m[39m
+  [1mLine 9:10:[22m   'data' is assigned a value but never used           [33m[4mno-unused-vars[24m[39m
+  [1mLine 9:16:[22m   'setData' is assigned a value but never used        [33m[4mno-unused-vars[24m[39m
+  [1mLine 10:10:[22m  'loading' is assigned a value but never used        [33m[4mno-unused-vars[24m[39m
+  [1mLine 19:9:[22m   'handleRefresh' is assigned a value but never used  [33m[4mno-unused-vars[24m[39m
+
+src/components/records/index.js
+  [1mLine 2:10:[22m   'Box' is defined but never used                                                                                  [33m[4mno-unused-vars[24m[39m
+  [1mLine 2:15:[22m   'IconButton' is defined but never used                                                                           [33m[4mno-unused-vars[24m[39m
+  [1mLine 2:33:[22m   'Divider' is defined but never used                                                                              [33m[4mno-unused-vars[24m[39m
+  [1mLine 4:10:[22m   'FaArrowLeft' is defined but never used                                                                          [33m[4mno-unused-vars[24m[39m
+  [1mLine 4:23:[22m   'FaSync' is defined but never used                                                                               [33m[4mno-unused-vars[24m[39m
+  [1mLine 10:10:[22m  'loading' is assigned a value but never used                                                                     [33m[4mno-unused-vars[24m[39m
+  [1mLine 15:10:[22m  'navigate' is assigned a value but never used                                                                    [33m[4mno-unused-vars[24m[39m
+  [1mLine 41:9:[22m   'handleRefresh' is assigned a value but never used                                                               [33m[4mno-unused-vars[24m[39m
+  [1mLine 48:6:[22m   React Hook useEffect has a missing dependency: 'fetchResults'. Either include it or remove the dependency array  [33m[4mreact-hooks/exhaustive-deps[24m[39m
+  [1mLine 93:6:[22m   React Hook useMemo has a missing dependency: 'styles'. Either include it or remove the dependency array          [33m[4mreact-hooks/exhaustive-deps[24m[39m
+
+src/components/routine/index.js
+  [1mLine 1:38:[22m   'useMemo' is defined but never used                                                                                                                                                                                                                              [33m[4mno-unused-vars[24m[39m
+  [1mLine 19:18:[22m  'setUpdate' is assigned a value but never used                                                                                                                                                                                                                   [33m[4mno-unused-vars[24m[39m
+  [1mLine 95:13:[22m  'response' is assigned a value but never used                                                                                                                                                                                                                    [33m[4mno-unused-vars[24m[39m
+  [1mLine 115:7:[22m  'handleSwipe' is assigned a value but never used                                                                                                                                                                                                                 [33m[4mno-unused-vars[24m[39m
+  [1mLine 159:6:[22m  React Hook useEffect has missing dependencies: 'fetchResults', 'initialData', and 'loading'. Either include them or remove the dependency array. You can also do a functional update 'setLoading(l => ...)' if you only need 'loading' in the 'setLoading' call  [33m[4mreact-hooks/exhaustive-deps[24m[39m
+  [1mLine 177:7:[22m  'onDelete' is assigned a value but never used                                                                                                                                                                                                                    [33m[4mno-unused-vars[24m[39m
+
+src/components/swipeableComponent/index.js
+  [1mLine 1:26:[22m  'useEffect' is defined but never used        [33m[4mno-unused-vars[24m[39m
+  [1mLine 5:12:[22m  'swiped' is assigned a value but never used  [33m[4mno-unused-vars[24m[39m
+
+src/pages/Login.jsx
+  [1mLine 1:27:[22m   'useEffect' is defined but never used         [33m[4mno-unused-vars[24m[39m
+  [1mLine 1:38:[22m   'useMemo' is defined but never used           [33m[4mno-unused-vars[24m[39m
+  [1mLine 9:20:[22m   'setUser' is assigned a value but never used  [33m[4mno-unused-vars[24m[39m
+  [1mLine 33:37:[22m  Expected '===' and instead saw '=='           [33m[4meqeqeq[24m[39m
+  [1mLine 41:38:[22m  Expected '===' and instead saw '=='           [33m[4meqeqeq[24m[39m
+
+src/pages/Register.jsx
+  [1mLine 1:27:[22m   'useEffect' is defined but never used  [33m[4mno-unused-vars[24m[39m
+  [1mLine 1:38:[22m   'useMemo' is defined but never used    [33m[4mno-unused-vars[24m[39m
+  [1mLine 38:37:[22m  Expected '===' and instead saw '=='    [33m[4meqeqeq[24m[39m
+
+webpack compiled with [1m[33m1 warning[39m[22m
+^C
+[1m[7m%[27m[1m[0m                                                         [0m[27m[24m[Jlimenkai@Kais-MacBook-Air Client % [K[?2004hccd ..[?2004l
+[1m[7m%[27m[1m[0m                                                         [0m[27m[24m[Jlimenkai@Kais-MacBook-Air gymgainz % [K[?2004hggit init [?2004l
+Reinitialized existing Git repository in /Users/limenkai/Desktop/gymgainz/.git/
+[1m[7m%[27m[1m[0m                                                         [0m[27m[24m[Jlimenkai@Kais-MacBook-Air gymgainz % [K[?2004hggit remote add oring [Kiini [K[A[56C[K[1B[K[A[56C              g  [?2004l[1B[1m[7m%[27m[1m[0m                                                         [0m[27m[24m[Jlimenkai@Kais-MacBook-Air gymgainz % [K[?2004hggit remote add origi [Knn [7mhttps://github.com/stuffkaicodes/gymgainz.git[27m[45D[27mh[27mt[27mt[27mp[27ms[27m:[27m/[27m/[27mg[27mi[27mt[27mh[27mu[27mb[27m.[27mc[27mo[27mm[27m/[27ms[27mt[27mu[27mf[27mf[27mk[27ma[27mi[27mc[27mo[27md[27me[27ms[27m/[27mg[27my[27mm[27mg[27ma[27mi[27mn[27mz[27m.[27mg[27mi[27mt[?2004l
+error: remote origin already exists.
+[1m[7m%[27m[1m[0m                                                         [0m[27m[24m[Jlimenkai@Kais-MacBook-Air gymgainz % [K[?2004hggit

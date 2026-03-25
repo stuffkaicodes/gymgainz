@@ -148,27 +148,27 @@ app.use((err, req, res, next) => {
   });
 });
 
-// Initialize services and start server
-const startServer = async () => {
-  try {
-    // Initialize Google Sheets service
-    await googleSheetsService.initialize();
+// // Initialize services and start server
+// const startServer = async () => {
+//   try {
+//     // Initialize Google Sheets service
+//     await googleSheetsService.initialize();
     
-    // Preload exercise data
-    await googleSheetsService.getExerciseData();
-    console.log('✅ Exercise data preloaded');
+//     // Preload exercise data
+//     await googleSheetsService.getExerciseData();
+//     console.log('✅ Exercise data preloaded');
 
-    // Start server
-    app.listen(PORT, () => {
-      console.log(`🚀 Server running on http://localhost:${PORT}`);
-      console.log(`📝 Environment: ${process.env.NODE_ENV || 'development'}`);
-    });
-  } catch (error) {
-    console.error('❌ Failed to start server:', error);
-    process.exit(1);
-  }
-};
+//     // Start server
+//     app.listen(PORT, () => {
+//       console.log(`🚀 Server running on http://localhost:${PORT}`);
+//       console.log(`📝 Environment: ${process.env.NODE_ENV || 'development'}`);
+//     });
+//   } catch (error) {
+//     console.error('❌ Failed to start server:', error);
+//     process.exit(1);
+//   }
+// };
 
-startServer();
+// startServer();
 
 export default app;

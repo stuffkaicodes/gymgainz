@@ -6,6 +6,7 @@ import exerciseRoutes from './routes/exercise.routes.js';
 import workoutRoutes from './routes/workout.routes.js';
 import googleSheetsService from './services/googleSheets.service.js';
 import axios from 'axios';
+import rateLimit from 'express-rate-limit';
 
 // Load environment variables
 dotenv.config();
@@ -43,6 +44,23 @@ app.use((req, res, next) => {
   res.setHeader('X-XSS-Protection', '1; mode=block');
   next();
 });
+
+// Rate limiting
+const limiter = rateLimit({
+  windowMs: 15 * 60 * 1000, // 15 minutes
+  max: 100, // 100 requests per windowMs
+  message: 'Too many requests, please try again later'
+});
+
+const authLimiter = rateLimit({
+  windowMs: 15 * 60 * 1000,
+  max: 5, // Only 5 login/register attempts
+  message: 'Too many attempts, please try again in 15 minutes'
+});
+
+// Apply limiters
+app.use('/api/', limiter);
+app.use('/api/auth/', authLimiter);
 
 // Proxy route for ExerciseDB images
 app.get('/api/exercise-image/:id', async (req, res) => {

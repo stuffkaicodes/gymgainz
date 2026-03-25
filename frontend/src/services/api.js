@@ -38,4 +38,13 @@ api.interceptors.response.use(
   }
 );
 
+axios.interceptors.response.use(
+  response => response,
+  error => {
+    if (error.response?.status === 429) {
+      alert('Too many requests. Please wait a few minutes and try again.');
+    }
+    return Promise.reject(error);
+  }
+);
 export default api;

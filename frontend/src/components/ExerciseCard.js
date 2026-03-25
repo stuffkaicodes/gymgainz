@@ -5,14 +5,10 @@ const ExerciseCard = ({ exercise, index, onRefresh, onRecord, onGetPrevious }) =
   const [weight, setWeight] = useState('');
   const [sets, setSets] = useState('');
   const [reps, setReps] = useState('');
-  const [previousWorkout, setPreviousWorkout] = useState(null);
+  const [previousWorkout] = useState(null);
   const [recording, setRecording] = useState(false);
   const [recorded, setRecorded] = useState(false);
   const [message, setMessage] = useState('');
-
-  useEffect(() => {
-    loadPreviousWorkout();
-  }, [loadPreviousWorkout]);
 
   const loadPreviousWorkout = useCallback(async () => {
     try {
@@ -24,8 +20,13 @@ const ExerciseCard = ({ exercise, index, onRefresh, onRecord, onGetPrevious }) =
       console.error('Error loading previous workout:', error);
     }
     return null;
-  }, []);  // ← Add this at the end!
+  }, [exercise.name, onGetPrevious]);  // ← Add this at the end!
 // 
+
+  useEffect(() => {
+    loadPreviousWorkout();
+  }, [loadPreviousWorkout]);
+
 
   const handleRecord = async () => {
     if (!weight || !sets || !reps) {

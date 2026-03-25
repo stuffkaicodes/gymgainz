@@ -13,10 +13,6 @@ const Routine = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
 
-  useEffect(() => {
-    loadRoutine();
-  }, [loadRoutine]);
-
   const loadRoutine = useCallback(async () => {
     setLoading(true);
     setError('');
@@ -34,7 +30,11 @@ const Routine = () => {
     } finally {
       setLoading(false);
     }
-  }, [routineName]);
+  }, [name]);
+
+  useEffect(() => {
+    loadRoutine();
+  }, [loadRoutine]);
 
   const handleRefreshExercise = async (index) => {
     try {

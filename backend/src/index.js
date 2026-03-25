@@ -7,12 +7,29 @@ import workoutRoutes from './routes/workout.routes.js';
 import googleSheetsService from './services/googleSheets.service.js';
 import axios from 'axios';
 import rateLimit from 'express-rate-limit';
+import { initDatabase } from './config/initDatabase.js';
 
 // Load environment variables
 dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT || 3001;
+
+async function startServer() {
+  try {
+    // Create tables if they don't exist
+    await initDatabase();
+    
+    app.listen(PORT, () => {
+      console.log(`🚀 Server running on port ${PORT}`);
+    });
+  } catch (error) {
+    console.error('❌ Failed to start server:', error);
+    process.exit(1);
+  }
+}
+
+startServer();
 
 // Middleware
 app.use(express.json());

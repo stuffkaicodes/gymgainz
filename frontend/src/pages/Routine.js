@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import exerciseService from '../services/exerciseService';
 import workoutService from '../services/workoutService';
@@ -15,9 +15,9 @@ const Routine = () => {
 
   useEffect(() => {
     loadRoutine();
-  }, [name]);
+  }, [loadRoutine]);
 
-  const loadRoutine = async () => {
+  const loadRoutine = useCallback(async () => {
     setLoading(true);
     setError('');
     
@@ -34,7 +34,7 @@ const Routine = () => {
     } finally {
       setLoading(false);
     }
-  };
+  }, [routineName]);
 
   const handleRefreshExercise = async (index) => {
     try {

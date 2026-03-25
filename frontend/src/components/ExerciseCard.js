@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import './ExerciseCard.css';
 
 const ExerciseCard = ({ exercise, index, onRefresh, onRecord, onGetPrevious }) => {
@@ -12,18 +12,20 @@ const ExerciseCard = ({ exercise, index, onRefresh, onRecord, onGetPrevious }) =
 
   useEffect(() => {
     loadPreviousWorkout();
-  }, [exercise.name]);
+  }, [loadPreviousWorkout]);
 
-  const loadPreviousWorkout = async () => {
-    const previous = await onGetPrevious(exercise.name);
-    if (previous) {
-      setPreviousWorkout(previous);
-      // Auto-fill with previous values
-      setWeight(previous.weight.toString());
-      setSets(previous.number_of_sets.toString());
-      setReps(previous.number_of_reps.toString());
+  const loadPreviousWorkout = useCallback(async () => {
+    try {
+        const previous = await onGetPrevious(exercise.name);
+      if (previous) {
+        return previous;
+      }
+    } catch (error) {
+      console.error('Error loading previous workout:', error);
     }
-  };
+    return null;
+  }, []);  // ← Add this at the end!
+// 
 
   const handleRecord = async () => {
     if (!weight || !sets || !reps) {

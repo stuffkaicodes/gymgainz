@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/gymgainz/static/css/main.b113f0f6.css",
+    "main.js": "/gymgainz/static/js/main.cdea2c35.js",
+    "index.html": "/gymgainz/index.html",
+    "main.b113f0f6.css.map": "/gymgainz/static/css/main.b113f0f6.css.map",
+    "main.cdea2c35.js.map": "/gymgainz/static/js/main.cdea2c35.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b113f0f6.css",
+    "static/js/main.cdea2c35.js"
+  ]
+}

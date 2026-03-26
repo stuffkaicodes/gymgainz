@@ -29,38 +29,22 @@ class GoogleSheetsService {
     }
   }
 
-  async getExerciseData(forceRefresh = false) {
-    const now = Date.now();
+  async getExerciseData() {
+    // ADD THIS CHECK FIRST! ↓
+    if (!this.auth) {
+      console.log('⚠️ Google Sheets auth not initialized, returning null');
+      return null;
+    }
     
-    // Return cached data if valid
-    if (!forceRefresh && this.cache && this.cacheTimestamp && (now - this.cacheTimestamp < this.CACHE_DURATION)) {
-      return this.cache;
-    }
-
-    try {
-      const spreadsheetId = process.env.GOOGLE_SHEETS_SPREADSHEET_ID;
-      const range = 'Illustrations!A:D';
-
-      const response = await this.sheets.spreadsheets.values.get({
-        spreadsheetId,
-        range,
-      });
-
-      this.cache = response.data.values || [];
-      this.cacheTimestamp = now;
-      
-      return this.cache;
-    } catch (error) {
-      console.error('Error fetching Google Sheets data:', error.message);
-      
-      // Return cached data if available, even if expired
-      if (this.cache) {
-        console.log('⚠️ Using stale cache due to fetch error');
-        return this.cache;
-      }
-      
-      throw error;
-    }
+    // Then your existing code:
+    const sheets = google.sheets({ version: 'v4', auth: this.auth });
+    
+    const response = await sheets.spreadsheets.values.get({
+      spreadsheetId: process.env.GOOGLE_SHEETS_SPREADSHEET_ID,
+      range: 'Sheet1!A:Z'
+    });
+    
+    return response.data.values;
   }
 
   clearCache() {

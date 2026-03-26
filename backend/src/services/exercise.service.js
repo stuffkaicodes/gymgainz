@@ -5,29 +5,89 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 class ExerciseService {
+
+  // Fetch exercise from ExerciseDB API as fallback
+async fetchFromExerciseDB(muscleGroup) {
+  try {
+    const rapidApiKey = process.env.RAPID_API_KEY;
+    
+    if (!rapidApiKey) {
+      console.error('❌ RAPID_API_KEY not set');
+      return null;
+    }
+
+    // Map your muscle groups to ExerciseDB target muscles
+    const targetMap = {
+      'Shoulders': 'delts',
+      'Chest': 'pectorals',
+      'Upper Arms': 'biceps',
+      'Back': 'lats',
+      'Forearms': 'forearms',
+      'Calves': 'calves',
+      'Hips': 'glutes',
+      'Thighs': 'quads'
+    };
+    
+    const target = targetMap[muscleGroup];
+    
+    if (!target) {
+      console.error(`❌ Unknown muscle group: ${muscleGroup}`);
+      return null;
+    }
+    
+    console.log(`🔍 Fetching from ExerciseDB for target: ${target}`);
+    
+    // Call ExerciseDB API to get exercises by target muscle
+    const response = await axios.get(
+      `https://exercisedb.p.rapidapi.com/exercises/target/${target}`,
+      {
+        headers: {
+          'X-RapidAPI-Key': rapidApiKey,
+          'X-RapidAPI-Host': 'exercisedb.p.rapidapi.com'
+        },
+        timeout: 5000
+      }
+    );
+    
+    if (!response.data || response.data.length === 0) {
+      console.log(`❌ No exercises found for ${muscleGroup} (${target})`);
+      return null;
+    }
+    
+    // Get random exercise from results
+    const exercises = response.data;
+    const randomExercise = exercises[Math.floor(Math.random() * exercises.length)];
+    
+    console.log(`✅ Found exercise: ${randomExercise.name}`);
+    
+    // Return just the name to match Google Sheets format
+    return randomExercise.name;
+    
+  } catch (error) {
+    console.error('Error fetching from ExerciseDB:', error.message);
+    return null;
+  }
+}
   
   // Get random exercise by muscle group and type
-  async getRandomExercise(muscleGroup, type = 'Strength') {
-    const rows = await googleSheetsService.getExerciseData();
+  async getRandomExercise(muscleGroup) {
+    try {
+      const sheetData = await googleSheetsService.getExerciseData();
+      
+      // Check if Google Sheets returned data
+      if (sheetData && sheetData.length > 0) {
+        // Use Google Sheets
+        const exercises = sheetData.filter(ex => ex.muscleGroup === muscleGroup);
+        if (exercises.length > 0) {
+          return exercises[Math.floor(Math.random() * exercises.length)];
+        }
+      }
+    } catch (error) {
+      console.log('Google Sheets failed, using ExerciseDB:', error.message);
+    }
     
-    const filteredRows = rows.filter(row => 
-      row[3] === muscleGroup && row[2] === type
-    );
-
-    if (filteredRows.length === 0) {
-      return null;
-    }
-
-    const exerciseNames = filteredRows
-      .map(row => row[1])
-      .filter(name => name);
-
-    if (exerciseNames.length === 0) {
-      return null;
-    }
-
-    const randomIndex = Math.floor(Math.random() * exerciseNames.length);
-    return exerciseNames[randomIndex];
+    // Fallback to ExerciseDB
+    return this.fetchFromExerciseDB(muscleGroup);
   }
 
   // Get all exercises for a specific muscle group

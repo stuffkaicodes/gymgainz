@@ -154,9 +154,9 @@ async fetchFromExerciseDB(muscleGroup) {
       const exerciseId = searchResponse.data[0].id;
       console.log(`✅ Found match: "${searchResponse.data[0].name}" (ID: ${exerciseId})`);
   
-      // ✅ RETURN YOUR BACKEND PROXY URL (not ExerciseDB direct URL!)
-      const gifUrl = `http://localhost:3001/api/exercise-image/${exerciseId}`;
-      
+      // ✅ Use environment variable for backend URL
+      const backendUrl = process.env.BACKEND_URL || 'http://localhost:3001';
+      const gifUrl = `${backendUrl}/api/exercise-image/${exerciseId}`;
       return gifUrl;
   
     } catch (error) {

@@ -12,7 +12,6 @@ export async function initDatabase() {
           username VARCHAR(100) NOT NULL UNIQUE,
           password VARCHAR(255) NOT NULL,
           created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-          updated_at TIMESTAMP NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
           INDEX idx_username (username)
         )
       `);
